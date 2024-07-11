@@ -26,6 +26,9 @@ Answer:
 
 - How you balance the trade-off between comparison accuracy and processing speed
 Answer:
+Simpler models like distilBert or others can improve speed of emedding, but it can come at cost of accuracy
+We can increase the threshold for similarity, which would mean a faster search, but we can miss out on many semantically duplicate sentences.
+
 
 3. An overview of how you envision this component being deployed and integrated in a
 streaming data pipeline.
