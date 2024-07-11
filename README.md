@@ -11,3 +11,4 @@ To achieve high Throughput:
 If the application needs to process a large number of sentences in real-time, 
 a GPU will provide faster encoding times. We can add a parameter for a small batch size, or a maximum wait time
  
+# Assumptions
