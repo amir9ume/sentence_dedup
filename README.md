@@ -13,12 +13,23 @@ a GPU will provide faster encoding times. We can add a parameter for a small bat
 
 #Key Requirements
 1. The system must process an ordered stream of sentences.
+
+ - This basically means that the older sentences would have arrived first, and we can use a queue, to pop sentences from the front. 
+
 2. Implement a buffer to store previously seen sentences. The buffer size should be
 configurable as a parameter in your code.
+
+- We can use a queue data structure to implement buffer, with some size value buffer_size
+  
 ● The system must handle varying buffer sizes, ranging from tens to thousands of
 sentences.
+
+- If size is a parameter, we should be able to do it for any size
+  
 4. It should process new sentences quickly, maintaining low latency even as the buffer grows to
 its maximum size.
+
+
 5. The system should balance accuracy of semantic similarity detection with processing speed.
 
  
