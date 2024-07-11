@@ -10,6 +10,17 @@ To achieve high Throughput:
 
 If the application needs to process a large number of sentences in real-time, 
 a GPU will provide faster encoding times. We can add a parameter for a small batch size, or a maximum wait time
+
+#Key Requirements
+1. The system must process an ordered stream of sentences.
+2. Implement a buffer to store previously seen sentences. The buffer size should be
+configurable as a parameter in your code.
+● The system must handle varying buffer sizes, ranging from tens to thousands of
+sentences.
+4. It should process new sentences quickly, maintaining low latency even as the buffer grows to
+its maximum size.
+5. The system should balance accuracy of semantic similarity detection with processing speed.
+
  
 # Assumptions
 
