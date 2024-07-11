@@ -19,7 +19,7 @@ The approach and design decisions are:
 Answer:
 
 - Any assumptions made about the nature of the incoming stream
-Answer:
+Answer:Current sentence transformer model based on BERT has 512 tokens limitation. If we get sentences or paragraphs, longer than 512 tokens, we would need to change the encoder model.
 
 - Potential optimizations for scaling to larger buffer sizes
 Answer:
